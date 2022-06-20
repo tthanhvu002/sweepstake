@@ -26,3 +26,13 @@ Array.from(menus).map(item => {
         item.querySelector('.sub-menu').classList.toggle('active')
     }
 })
+
+const navMbBtn = document.querySelector('.nav-mobile-btn')
+const header = document.querySelector('.header')
+const close = document.querySelector('.close-btn')
+navMbBtn.onclick = () => {  
+  header.classList.add('active')
+}
+close.onclick = () => {
+  header.classList.remove('active')
+}
