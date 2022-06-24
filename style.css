@@ -59,6 +59,8 @@
     line-height: 33px;
     border-radius: 2px;
     display: flex;
+    text-decoration: none;
+    color: #000;
     justify-content: center;
     align-items: center;
 }
@@ -69,6 +71,10 @@
 .register-btn{
     color: #000;
     background-color: #ffe900;
+}
+.register-btn a{
+    color: #000;
+    text-decoration: none;
 }
 
 .logo{
