@@ -26,6 +26,16 @@ Array.from(menus).map(item => {
     item.onclick = () => {
         item.querySelector('.sub-menu').classList.toggle('active')
     }
+    window.addEventListener('click', function(e){   
+      if (item.contains(e.target)){
+        // Clicked in box
+    
+      } else{
+        // Clicked outside the box
+        item.querySelector('.sub-menu').classList.remove('active')
+        
+      }
+    });
 })
 
 const navMbBtn = document.querySelector('.nav-mobile-btn')
@@ -37,5 +47,7 @@ navMbBtn.onclick = () => {
 close.onclick = () => {
   header.classList.remove('active')
 }
+
+
 
 
