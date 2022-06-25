@@ -813,13 +813,15 @@ h1{
 
 table{
     border-collapse: collapse;
+    background-color: #23364afd;
     margin: 50px auto;
 }
 
 tr, th, td{
     text-align: center;
-    padding: 10px;
-    border: 1px solid #000;
+    padding: 12px;
+    border: 1px solid #888;
+    color: #fff;
 }
 td{
     
