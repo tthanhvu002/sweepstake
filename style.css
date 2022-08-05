@@ -448,7 +448,7 @@ ul{
     height: 100vh;
 }
 .swiper-slide img{
-    filter: brightness(70%git a);
+    filter: brightness(70%) blur(1px);
     width: 100%;
     object-fit: cover;
 }
