@@ -1,10 +1,11 @@
 
 
 
-const menus = document.querySelectorAll('.menu >git ali')
+const menus = document.querySelectorAll('.menu > li')
 Array.from(menus).map(item => {
     item.onclick = () => {
         item.querySelector('.sub-menu').classList.toggle('active')
+        console.log(1);
         Array.from(menus).map(i => {
           if(!i.isSameNode(item)){
             i.classList.add('opacity-0')
