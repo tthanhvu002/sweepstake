@@ -487,7 +487,8 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .no-one-heading{
@@ -516,6 +517,7 @@ ul{
 .sub-menu{
     position: absolute;
     top: 33px;
+    z-index: 99;
     background-color: #ffe900;
     width: 588px;
     justify-content: space-between;
@@ -551,7 +553,9 @@ ul{
 .close-btn{
     display: none;
 }
-
+.opacity-0{
+    opacity: 0 !important;
+}
 @media screen and (max-width: 1023.98px) {
     .wrapper{
         position: relative;
@@ -559,6 +563,22 @@ ul{
     .mobile-header, .mobile-logo, .nav-mobile-btn{
         display: block;
         
+    }
+    .sub-menu{
+        left: -50%;
+        z-index: 99;
+        top: -150%;
+        background-color: #000;
+        
+    }
+    .sub-menu.active{
+        width: 200px;
+        height: 254px;
+        top: -57px;
+        z-index: 999999;
+    }
+    .sub-menu li a{
+        color: #fff;
     }
     .mobile-header{
         background-color: #000;

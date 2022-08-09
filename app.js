@@ -1,10 +1,16 @@
 
 
 
-const menus = document.querySelectorAll('.menu li')
+const menus = document.querySelectorAll('.menu >git ali')
 Array.from(menus).map(item => {
     item.onclick = () => {
         item.querySelector('.sub-menu').classList.toggle('active')
+        Array.from(menus).map(i => {
+          if(!i.isSameNode(item)){
+            i.classList.add('opacity-0')
+
+          }
+        })
     }
     window.addEventListener('click', function(e){   
       if (item.contains(e.target)){
