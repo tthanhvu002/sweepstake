@@ -553,10 +553,11 @@ ul{
 .close-btn{
     display: none;
 }
-.opacity-0{
-    opacity: 0 !important;
-}
+
 @media screen and (max-width: 1023.98px) {
+    .opacity-0{
+        opacity: 0 !important;
+    }
     .wrapper{
         position: relative;
     }
