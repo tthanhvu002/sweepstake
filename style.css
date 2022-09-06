@@ -572,11 +572,15 @@ ul{
         background-color: #000;
         
     }
+    .menu li{
+        position: unset;
+    }
     .sub-menu.active{
         width: 200px;
         height: 254px;
-        top: -57px;
+        top: -104px;
         z-index: 999999;
+        border: unset;
     }
     .sub-menu li a{
         color: #fff;
@@ -592,8 +596,8 @@ ul{
     }
     .mobile-logo{
         color: #fff;
-    font-weight: 700;
-    font-size: 20px;
+        font-weight: 700;
+        font-size: 20px;
     }
     .close-btn{
         position: absolute;
